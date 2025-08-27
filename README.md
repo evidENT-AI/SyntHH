@@ -293,6 +293,60 @@ We develop sophisticated synthetic data generation methods that:
 
 ---
 
+## Getting Started
+
+### Prerequisites
+
+- Python 3.9+ 
+- Conda or Miniconda
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/liambarrett/SyntHH.git
+cd SyntHH
+```
+
+2. Create and activate the conda environment:
+```bash
+conda env create -f environment.yml
+conda activate synthh
+```
+
+3. Install the package in development mode:
+```bash
+pip install -e .
+```
+
+4. For deep learning capabilities:
+```bash
+pip install -e .[deep-learning]
+```
+
+5. For development tools:
+```bash
+pip install -e .[dev]
+```
+
+### Quick Start
+
+Start Jupyter Lab to explore the notebooks:
+```bash
+jupyter lab
+```
+
+The main data processing and model development will be done in Jupyter notebooks located in the `notebooks/` directory.
+
+### Development Commands
+
+- **Run tests**: `pytest tests/`
+- **Format code**: `black src/ tests/`
+- **Lint code**: `flake8 src/ tests/`
+- **Type checking**: `mypy src/`
+
+---
+
 ## Contact & Collaboration
 
 ### Research Team
